@@ -5,7 +5,7 @@ class CreateListings < ActiveRecord::Migration
       t.string :listing_type
       t.string :title
       t.text :description
-      t.decimal :price, :precision => 8, :scale => 2
+      t.decimal :price, precision: 8, scale: 2
       t.integer :neighborhood_id
       t.integer :host_id
       t.timestamps null: false
